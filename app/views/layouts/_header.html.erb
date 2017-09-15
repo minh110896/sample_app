@@ -1,0 +1,12 @@
+<header class="navbar navbar-fixed-top navbar-inverse" >
+  <div class="container" >
+    <%= link_to (t "layouts.header.link2"), root_path, id: "logo" %>
+    <nav>
+      <ul class="nav navbar-nav navbar-right" >
+        <li><%= link_to (t "static_pages.home.head"), root_path %></li>
+        <li><%= link_to (t "static_pages.help.head"), helf_path %></li>
+        <li><%= link_to (t "layouts.header.link1"), "#" %></li>
+      </ul>
+    </nav>
+  </div>
+</header>

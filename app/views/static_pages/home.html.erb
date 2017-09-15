@@ -1,7 +1,11 @@
-<% provide(:title, t(".head")) %>
-<h1><%= t ".titlehead"%></h1>
-<p>
-  <%= t ".about" %>
-  <a href="http://www.railstutorial.org/"><%= t "static_pages.help.content4" %></a>
-  <%= t ".about2" %>
-</p>
+<% provide(:title,  (t ".head")) %>
+<div class="center jumbotron" >
+  <h1><%= t ".content" %></h1>
+  <h2>
+    <%= t ".content1" %>
+    <a href="http://www.railstutorial.org/" ><%= t ".content2" %></a>
+    <%= t ".content3" %>
+  </h2>
+  <%= link_to (t "static_pages.home.link1" ), "#", class: "btn btn-lg btn-primary" %>
+</div>
+<%= link_to image_tag("rails.png", alt: "Rails logo" ), "http://rubyonrails.org/" %>
