@@ -62,3 +62,10 @@ en:
   helpers:
     application_helper:
       title: "Ruby on Rails Tutorial Sample App"
+  controller:
+    users_controller:
+      success: "Welcome to the Sample App!"
+      notfind: "Can not find this user"
+  users:
+    new:
+      signup: "Sign up"
