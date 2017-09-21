@@ -1,11 +1,9 @@
 class UsersController < ApplicationController
   def show
     @user = User.find_by(id: params[:id])
-
-    unless @user
-      flash[:danger] = t "controller.users_controller.notfind"
-      render "static_pages/home"
-    end
+    return if @user
+    flash[:danger] = t "controllers.users_controller.notfind"
+    render "static_pages/home"
   end
 
   def new
@@ -15,7 +13,8 @@ class UsersController < ApplicationController
   def create
     @user = User.new user_params
     if @user.save
-      flash[:success] = t "controller.users_controller.success"
+      log_in @user
+      flash[:success] = t "controllers.users_controller.success"
       redirect_to @user
     else
       render "new"

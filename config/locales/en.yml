@@ -62,10 +62,18 @@ en:
   helpers:
     application_helper:
       title: "Ruby on Rails Tutorial Sample App"
-  controller:
+  controllers:
     users_controller:
       success: "Welcome to the Sample App!"
       notfind: "Can not find this user"
+    sessions_controller:
+      warn: "Invalid email/password combination"
   users:
     new:
       signup: "Sign up"
+      create: "Create my account"
+  sessions:
+    new:
+      head: "Log in"
+      sign: "Sign up now!"
+      content: "New user? "
