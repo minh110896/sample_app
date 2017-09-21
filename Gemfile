@@ -10,6 +10,10 @@ end
 gem "rails", "~> 5.1.4"
 gem "bcrypt", "3.1.11"
 gem "config"
+gem "remotipart"
+gem "jquery-turbolinks"
+gem "jquery"
+gem "jquery-rails"
 # Use sqlite3 as the database for Active Record
 gem "sqlite3"
 # Use Puma as the app server
