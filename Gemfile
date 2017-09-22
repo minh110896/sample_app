@@ -14,6 +14,7 @@ gem "remotipart"
 gem "jquery-turbolinks"
 gem "jquery"
 gem "jquery-rails"
+gem "bootstrap_form"
 # Use sqlite3 as the database for Active Record
 gem "sqlite3"
 # Use Puma as the app server
