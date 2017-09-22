@@ -57,8 +57,12 @@ en:
        content3: "The "
        content4: "by "
     header:
-       link1: "Log in"
-       link2: "sample app"
+       login: "Log in"
+       logout: "Log out"
+       content: "sample app"
+       profile: "Profile"
+       setting: "Settings"
+       user: "Users"
   helpers:
     application_helper:
       title: "Ruby on Rails Tutorial Sample App"
@@ -66,12 +70,27 @@ en:
     users_controller:
       success: "Welcome to the Sample App!"
       notfind: "Can not find this user"
+      update: "Profile updated"
+      delete: "User deleted"
+      login: "Please log in."
+      notload: "Can not load"
     sessions_controller:
       warn: "Invalid email/password combination"
   users:
     new:
       signup: "Sign up"
       create: "Create my account"
+    edit:
+      head: "Edit user"
+      content: "Update your profile"
+      save: "Save changes"
+      change: "Change"
+    index:
+      head: "All users"
+      content: "All users"
+    user:
+      delete: "Delete"
+      sure: "You sure?"
   sessions:
     new:
       head: "Log in"
