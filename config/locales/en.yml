@@ -67,6 +67,9 @@ en:
     application_helper:
       title: "Ruby on Rails Tutorial Sample App"
   controllers:
+    account_activation_controller:
+      success: "Account activated!"
+      danger: "Invalid activation link"
     users_controller:
       success: "Welcome to the Sample App!"
       notfind: "Can not find this user"
@@ -74,8 +77,11 @@ en:
       delete: "User deleted"
       login: "Please log in."
       notload: "Can not load"
+      info: "Please check your email to activate your account."
     sessions_controller:
       warn: "Invalid email/password combination"
+      notactivated: "Account not activated. "
+      check_email: "Check your email for the activation link."
   users:
     new:
       signup: "Sign up"
@@ -97,3 +103,9 @@ en:
       sign: "Sign up now!"
       content: "New user? "
       remember: "Remember me"
+  user_mailer:
+    account_activation:
+      hi: "Hi"
+      head: "Sample App"
+      content1: "Welcome to the Sample App! Click on the link below to activate your account:"
+      activate:

@@ -1,7 +1,7 @@
 name:
-  maximum: 15
+  maximum: 30
 email:
-  maximum: 20
+  maximum: 50
 password:
   minimum: 6
 gravata:
