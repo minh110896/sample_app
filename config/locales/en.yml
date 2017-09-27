@@ -82,6 +82,16 @@ en:
       warn: "Invalid email/password combination"
       notactivated: "Account not activated. "
       check_email: "Check your email for the activation link."
+    password_resets_controller:
+      success: "Password has been reset."
+      danger: "Password reset has expired."
+      notfound: "Email address not found"
+      info: "Email sent with password reset instructions"
+      notempty: "can't be empty"
+  mailers:
+    user_mailer:
+      active: "Account activation"
+      reset: "Password reset"
   users:
     new:
       signup: "Sign up"
@@ -108,4 +118,21 @@ en:
       hi: "Hi"
       head: "Sample App"
       content1: "Welcome to the Sample App! Click on the link below to activate your account:"
-      activate:
+      activate: "Activated"
+    password_reset:
+      head: "Password reset"
+      content1: "To reset your password click the link below:"
+      reset: "Reset password"
+      content2: "This link will expire in two hours."
+      content3: "If you did not request your password to be reset, please ignore this email and your password will stay as it is."
+      content4: "To reset your password click the link below:"
+      content5: "This link will expire in two hours."
+      content6: "If you did not request your password to be reset, please ignore this email and your password will stay as it is."
+  password_resets:
+    edit:
+      title: "Reset password"
+      confirm: "Confirmation"
+      update: "Update password"
+    new:
+      title: "Forgot password"
+      submit: "Submit"

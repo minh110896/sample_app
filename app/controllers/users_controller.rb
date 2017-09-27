@@ -8,7 +8,7 @@ class UsersController < ApplicationController
     @user = User.find_by(id: params[:id])
     return if @user
     flash[:danger] = t "controllers.users_controller.notload"
-    redirect_to @user
+    render "static_pages/home"
   end
 
   def index
@@ -46,7 +46,8 @@ class UsersController < ApplicationController
   end
 
   def destroy
-    if load_user.destroy
+    load_user
+    if User.find_by(id: params[:id]).destroy
       flash[:success] = t "controllers.users_controller.delete"
       redirect_to users_url
     else
@@ -70,5 +71,9 @@ class UsersController < ApplicationController
   def correct_user
     load_user
     redirect_to root_url unless current_user?(@user)
+  end
+
+  def admin_user
+    redirect_to(root_url) unless current_user.admin?
   end
 end
