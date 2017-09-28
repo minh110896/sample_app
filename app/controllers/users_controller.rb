@@ -16,6 +16,7 @@ class UsersController < ApplicationController
   end
 
   def show
+    @microposts = @user.microposts.paginate(page: params[:page])
     return if @user
     flash[:danger] = t "controllers.users_controller.notfind"
     render "static_pages/home"
@@ -46,7 +47,6 @@ class UsersController < ApplicationController
   end
 
   def destroy
-    load_user
     if User.find_by(id: params[:id]).destroy
       flash[:success] = t "controllers.users_controller.delete"
       redirect_to users_url
