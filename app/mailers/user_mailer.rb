@@ -9,4 +9,3 @@ class UserMailer < ApplicationMailer
     mail to: user.email, subject: (t "mailers.user_mailer.reset")
   end
 end
-

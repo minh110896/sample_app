@@ -7,3 +7,9 @@ password:
 gravata:
   size: 50
 session: 1
+mircropost: 50
+content:
+  maximum: 140
+picture:
+  size: 5
+time: 2

@@ -49,6 +49,7 @@ en:
       content2: "Ruby on Rails Tutorial"
       content3: "sample application."
       link1: "Sign up now!"
+      micropost:
   layouts:
     footer:
        content: "Ruby on Rails Tutorial"
@@ -88,6 +89,11 @@ en:
       notfound: "Email address not found"
       info: "Email sent with password reset instructions"
       notempty: "can't be empty"
+    microposts_controller:
+      create: "Micropost created!"
+      delete: "Micropost deleted"
+    application_controller:
+      login: "Please log in."
   mailers:
     user_mailer:
       active: "Account activation"
@@ -107,6 +113,8 @@ en:
     user:
       delete: "Delete"
       sure: "You sure?"
+    show:
+      micropost: "Microposts"
   sessions:
     new:
       head: "Log in"
@@ -136,3 +144,18 @@ en:
     new:
       title: "Forgot password"
       submit: "Submit"
+  models:
+    micropost:
+      warn: "should be less than 5MB"
+  microposts:
+    micropost:
+      delete: "Delete"
+      sure: "You sure?"
+  shared:
+    user_infor:
+      view: "View my profile"
+      micropost: "Micropost"
+    micropost_form:
+      warn: "Maximum file size is 5MB. Please choose a smaller file."
+      post: "Post"
+      compose: "Compose new micropost..."
