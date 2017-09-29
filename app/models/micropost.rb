@@ -4,7 +4,8 @@ class Micropost < ApplicationRecord
   validates :user_id, presence: true
   validates :content, presence: true, length: {maximum: Settings.content.maximum}
   default_scope ->{order(created_at: :desc)}
-  scope :feed_by_user, ->(id){where("user_id = ?", id)}
+  # scope :feed_by_user, ->(id){where("user_id = ?", id)}
+  scope :feed_by_user, ->(user){where "user_id IN (?) OR user_id = ?", user.following_ids, user.id}
 
   private
 
