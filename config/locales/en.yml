@@ -49,7 +49,7 @@ en:
       content2: "Ruby on Rails Tutorial"
       content3: "sample application."
       link1: "Sign up now!"
-      micropost:
+      micropost: "Micropost Feed"
   layouts:
     footer:
        content: "Ruby on Rails Tutorial"
@@ -115,6 +115,13 @@ en:
       sure: "You sure?"
     show:
       micropost: "Microposts"
+    follow:
+      follow: "Follow"
+      viewpro: "view my profile"
+      following: "Following"
+      follower: "Follower"
+    unfollow:
+      unfollow: "Unfollow"
   sessions:
     new:
       head: "Log in"
@@ -159,3 +166,6 @@ en:
       warn: "Maximum file size is 5MB. Please choose a smaller file."
       post: "Post"
       compose: "Compose new micropost..."
+    stats:
+      following: "following"
+      follower: "followers"
